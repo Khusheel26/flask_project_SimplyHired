@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Jovain Career</title>
+    <style>
+       #banner{
+        object-fit: cover;
+        width: 100%;
+        height: 360px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">Jovain Career's Path</h1>
+        <img class = "img-fluid" id = "banner"src="http://192.168.29.51:5000/static/banner.jpg" alt="OOPSIE DOOPSIE" >
+
+        <h2 class="text-center mt-2 mb-4">About  Us</h2>
+        <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam numquam laudantium, facilis itaque consequuntur nisi in excepturi ullam! Labore modi, laboriosam voluptatum consequuntur at natus magnam hic magni quisquam pariatur, commodi ut aperiam fugiat ipsum nesciunt assumenda ipsa impedit deserunt alias quaerat autem corrupti vitae? Ipsum architecto excepturi cumque fugiat, quod tenetur odio, ex, magni rem consequuntur dolores! Illum voluptatem omnis distinctio consequatur, ipsa repudiandae cupiditate amet atque odit quas adipisci fuga in ullam, est facilis officia placeat natus odio vero dicta. Distinctio maxime aperiam, porro commodi, impedit non dolorem dolor necessitatibus ab veniam laborum nemo tempore incidunt officiis voluptatem itaque eum explicabo adipisci saepe sint error obcaecati. Ut delectus ex recusandae, commodi perferendis molestiae omnis sunt quaerat corrupti sint veritatis ad distinctio mollitia sapiente? Illum, distinctio. Quaerat sapiente repellendus dignissimos distinctio harum error vel odio, libero, perferendis asperiores nobis minima provident corporis officia ipsam ut explicabo quasi incidunt laboriosam?</p>
+        <h2 class="text-center mt-2 mb-4"> Open Positions</h2>
+        <div>
+            {%for job in jobs%}
+                {% include 'jobitem.html'%}
+            {%endfor%}
+        </div>
+        <div style=" text-align: center;">
+            <button class="btn btn-primary btn-lg">Contact Us</button>
+        </div>
+    </div>
+</body>
+</html>
